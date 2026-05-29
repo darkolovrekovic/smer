@@ -1,0 +1,18 @@
+* {
+    background-color: rgb(16, 16, 16);
+    color: rgb(253, 253, 150);
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    width: 45%;
+    align-self: center;
+}
+
+input {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+h2 {
+    margin-top: 25vh;
+}

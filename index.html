@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Smer?</h2>
+    <form id="unos" method="post">
+        <label for="id">ID:</label>
+        <input type="text" size="5" name="ID" id="id"><br><br>
+        <label for="naziv_smera">Naziv smera:</label>
+        <input type="text" size="20" name="NAZIV" id="naziv_smera"><br><br>
+        <input type="submit" value="Dodaj" formaction="api/smer_create.php">
+        <input type="submit" value="Pronadji" formaction="api/smer_find.php">
+        <input type="submit" value="Izmeni" formaction="api/smer_update.php">
+        <input type="submit" value="Obrisi" formaction="api/smer_delete.php">
+        <input type="submit" value="Izlistaj" formaction="api/smer_listall.php">
+        <input type="submit" value="ListBy" formaction="api/smer_listby.php">
+    </form>
+    <div id="poruka"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
