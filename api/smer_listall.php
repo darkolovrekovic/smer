@@ -1,4 +1,19 @@
 <?php
+    $allowed_origins = [
+        "https://timofej.asejev.ucim.in.rs",
+        "http://localhost",
+        "http://127.0.0.1",
+    ];
+
+    $origin = $_SERVER['HTTP_ORIGINS'] ?? '';
+
+    foreach ($allowed_origins as $allowed){
+        if (str_starts_with($origin, $allowed)) {
+            header("Access-Control-Allow-Origin: " . $origin);
+            break;
+        }
+    }
+
     header("Content-Type: application/json; charset=UTF-8");
     require_once("../baza/smer.php");
 
